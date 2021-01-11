@@ -1,48 +1,48 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import renderImage from "../images/render.jpg"
 import renderDetailImage from "../images/render-detail.jpg"
 export default () => {
   return (
     <Layout>
-      <div class="container  mx-auto mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
+      <div className="container  mx-auto mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
         <div>
           <div>
-            <div class="relative overflow-hidden pb-60">
+            <div className="relative overflow-hidden pb-60">
               <img
-                // class="absolute h-full w-full object-cover object-center"
-                src={renderImage} 
-                alt="optimate"
+                 //className="absolute h-full w-full object-cover object-center"
+                src={renderImage}
+                alt="cloudpilot"
               />
             </div>
-            <div class="flex">
-              <div class="px-4 w-200 h-120 bg-red-600 flex justify-center items-center flex-col text-white font-bold text-center">
-                <p class="text-2xl">optimate</p>
-                {/* <p class="uppercase -mt-1">Sistemas Eletrônicos</p> */}
+            <div className="flex">
+              <div className="px-4 w-200 h-120 bg-red-600 flex justify-center items-center flex-col text-white font-bold text-center">
+                <p className="text-2xl">cloud</p>
+                <p class="uppercase -mt-1">native</p>
               </div>
-              <div class="bg-white h-20 flex-grow flex items-center px-4">
-                <p class="font-bold text-lg">Sistemas de Comunicação Satelital</p>
+              <div className="bg-white h-20 flex-grow flex items-center px-4">
+                <p className="font-bold text-lg">applications</p>
               </div>
             </div>
           </div>
         </div>
         <div>
           <div>
-            <div class="relative overflow-hidden pb-60">
+            <div className="relative overflow-hidden pb-60">
               <img
                 //class="absolute h-full w-full object-cover object-center"
-                src={renderDetailImage} 
-                alt=""
+                src={renderDetailImage}
+                alt="cloudpilot"
               />
             </div>
-            <div class="flex">
-              <div class="w-200 h-20 bg-blue-300 flex justify-center items-center flex-col text-white font-bold text-center">
-                <p class="px-4 text-2xl">Aplicações</p>
-                {/* <p class="uppercase -mt-1">Jan</p> */}
+            <div className="flex">
+              <div className="w-200 h-20 bg-blue-300 flex justify-center items-center flex-col text-white font-bold text-center">
+                <p className="px-4 text-2xl">Services</p>
+                <p class="uppercase -mt-1">fullstack</p>
               </div>
-              <div class="bg-white h-20 flex-grow flex items-center px-4">
-                <p class="font-bold text-lg">Infra-estrutura</p>
+              <div className="bg-white h-20 flex-grow flex items-center px-4">
+                <p className="font-bold text-lg">Strategy</p>
               </div>
             </div>
           </div>

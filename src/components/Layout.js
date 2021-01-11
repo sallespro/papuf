@@ -7,8 +7,6 @@ const Layout = ({ children }) => {
     <>
       <SEO />
       <div>
-        {/* <div className="flex flex-col min-h-screen bg-white"> */}
-
         <header>
           <nav className="bg-white shadow">
             <div className="container mx-auto px-6 py-3 ">
@@ -18,7 +16,6 @@ const Layout = ({ children }) => {
                     <div className="inline text-gray-700 text-xl font-bold">
                       cloudpilot
                     </div>
-                    
                   </div>
 
                   <div class="flex md:hidden">
@@ -46,20 +43,20 @@ const Layout = ({ children }) => {
                   </Link>
                   <Link
                     className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
-                    to="/produto/"
+                    to="/services/"
                   >
                     Services
                   </Link>
                   <Link
                     className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
-                    to="/produto/"
+                    to="/products/"
                   >
                     Products
                   </Link>
 
                   <Link
                     className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
-                    to="/contato/"
+                    to="contact/"
                   >
                     About
                   </Link>
@@ -67,17 +64,11 @@ const Layout = ({ children }) => {
               </div>
             </div>
           </nav>
-
-
         </header>
-        {/* <header className="p-4 bg-gray-400 text-red-700 font-semibold">
-          <h1 className="max-w-4xl mx-auto">Optimate</h1>
-          <p><Link to="/produto/">produtos</Link></p>
-        </header> */}
         {children}
-        <footer className="py-2 text-center text-gray-600 text-xs">
-          2021 &copy; salles pro services
-        </footer>
+        {/* <footer className="py-2 text-center text-gray-600 text-xs">
+         &copy; 2021 - salles pro services
+        </footer> */}
       </div>
     </>
   )

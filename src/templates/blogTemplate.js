@@ -17,13 +17,7 @@ export default function Template({
             </div>
             <div className="flex w-full md:w-1/2 p-10 bg-white text-gray-600 items-center">
               <div className="w-full">
-                <img
-                  className="w-full max-w-lg mt-16 mx-auto sm:w-1/2"
-                  //src={heroImage}
-                  src="http://www.optimate.com.br/images/fachada_lateralg.jpg"
-                  //src="http://www.optimate.com.br/images/top.jpg"
-                  alt="optimate"
-                />
+
 
                 <div className="flex w-full items-end mb-6">
                   <span className="block leading-none text-3xl text-gray-800">
