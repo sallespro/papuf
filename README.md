@@ -1,22 +1,22 @@
-# Optimate
+# papuf
 
 ## source code
 
-[source code](https://github.com/sallespro/buffon)
+[source code](https://github.com/sallespro/papuf)
 
 ## github.io hosted
 
-The [github.io](https://sallespro.github.io/buffon/) site
+The [github.io](https://sallespro.github.io/papuf/) site
 
 ## Development Sandbox
 
-### The Sandbox Server
+### The CodeSandbox
 
-[Sandbox Server](https://codesandbox.io/s/hopeful-franklin-2326x?file=/README.md)
+[CodeSandbox](https://codesandbox.io/s/cool-murdock-riwjb)
 
 ### The Development Environment in the cloud
 
-[sandbox template](https://codesandbox.io/s/github/sallespro/buffon)
+[sandbox template](https://codesandbox.io/s/github/sallespro/papuf)
 
 ## Layout - Tailwind CSS
 
