@@ -16,9 +16,9 @@ const Layout = ({ children }) => {
                 <div className="flex justify-between items-center">
                   <div className="text-xl font-semibold text-gray-700">
                     <div className="inline text-gray-700 text-xl font-bold">
-                      Opti
+                      cloudpilot
                     </div>
-                    <div className="inline text-red-700 text-xl font-bold">mate</div>
+                    
                   </div>
 
                   <div class="flex md:hidden">
@@ -42,26 +42,26 @@ const Layout = ({ children }) => {
                     className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
                     to="/"
                   >
-                    Apresentação
+                    home
                   </Link>
                   <Link
                     className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
                     to="/produto/"
                   >
-                    Produtos
+                    Services
                   </Link>
                   <Link
                     className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
                     to="/produto/"
                   >
-                    Revendedores
+                    Products
                   </Link>
 
                   <Link
                     className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
                     to="/contato/"
                   >
-                    contato
+                    About
                   </Link>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const Layout = ({ children }) => {
         </header> */}
         {children}
         <footer className="py-2 text-center text-gray-600 text-xs">
-          2020 &copy; optimate
+          2021 &copy; salles pro services
         </footer>
       </div>
     </>

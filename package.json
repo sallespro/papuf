@@ -1,8 +1,8 @@
 {
-  "name": "buffon",
+  "name": "papuf",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:sallespro/buffon.git",
+  "repository": "git@github.com:sallespro/papuf.git",
   "author": "Rafael Rocco Salles <sallespro@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -31,5 +31,5 @@
     "tailwindcss": "^1.4.1"
   },
   "keywords": [],
-  "description": "gatsby-starter-tailwind-buffon"
+  "description": "gatsby-starter-tailwind"
 }

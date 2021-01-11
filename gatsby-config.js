@@ -6,7 +6,7 @@ const { theme } = resolveConfig(tailwindConfig)
 module.exports = {
   pathPrefix: "/buffon",
   siteMetadata: {
-    title: "Gatsby Starter Tailwind CSS",
+    title: "papuf",
     author: "Rafael Rocco Salles",
     description: "A Gatsby starter"
   },
