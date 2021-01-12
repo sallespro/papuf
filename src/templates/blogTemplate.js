@@ -26,7 +26,7 @@ export default function Template({
                   <span className="block leading-5 text-sm ml-4 text-green-500"></span>
                 </div>
 
-                <div class="flex w-full text-xs"></div>
+                <div className="flex w-full text-xs"></div>
               </div>
             </div>
           </div>
