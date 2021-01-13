@@ -1,9 +1,11 @@
 import React from "react"
 import SEO from "./SEO"
 import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
-const Layout = ({ children }) => {
-  return (
+
+const MarkdownLayout = ({ children, data }) => (
     <>
       <SEO />
       <header>
@@ -47,23 +49,44 @@ const Layout = ({ children }) => {
                   Services
                 </Link>
 
-                <Link
-                  className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
-                  to="/about"
-                >
-                  About
-                </Link>
               </div>
             </div>
           </div>
         </nav>
       </header>
+      <Img
+          fluid={data.mdx.frontmatter.image.childImageSharp.fluid}
+          alt="images"
+        />
+        {data.mdx.frontmatter.title}
       {children}
       {/* <footer className="py-2 text-center text-gray-600 text-xs">
          &copy; 2021 - salles pro services
         </footer> */}
     </>
   )
-}
 
-export default Layout
+export default MarkdownLayout
+
+export const pageQuery = graphql`
+  query PostQuery($slug: String) {
+    mdx(fields: { slug: { eq: $slug } }) {
+      id
+      frontmatter {
+        title
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
