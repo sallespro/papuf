@@ -9,12 +9,12 @@ const IndexPage = ({
   },
 }) => (
   <Layout>
-    {pages.map((page, index) => (
+    {/* {pages.map((page, index) => (
       <>
         <Link key={index} to={page.path}>{page.path}</Link>
         <br />
       </>
-    ))}
+    ))} */}
   </Layout>
 )
 

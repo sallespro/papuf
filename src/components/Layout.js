@@ -1,8 +1,15 @@
 import React from "react"
 import SEO from "./SEO"
 import { Link } from "gatsby"
+import useSiteMetadata from "../hooks/useSiteMetadata"
+import usePathList from "../hooks/usePathList"
 
 const Layout = ({ children }) => {
+  const { title, description } = useSiteMetadata()
+
+  //console.log(usePathList())
+  const pages = usePathList()
+
   return (
     <>
       <SEO />
@@ -13,7 +20,7 @@ const Layout = ({ children }) => {
               <div className="flex justify-between items-center">
                 <div className="text-xl font-semibold text-gray-700">
                   <div className="inline text-gray-700 text-xl font-bold">
-                    papuf
+                    {title}
                   </div>
                 </div>
 
@@ -40,6 +47,24 @@ const Layout = ({ children }) => {
                 >
                   home
                 </Link>
+                {pages.map((page, index) => (
+                  <>
+                    <Link
+                      className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
+                      key={index}
+                      to={page.path}
+                    >
+                      {page.path.replace(/^\/|\/$/g, "")}
+                    </Link>
+                    <br />
+                  </>
+                ))}
+                {/* <Link
+                  className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
+                  to="/"
+                >
+                  home
+                </Link>
                 <Link
                   className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
                   to="/services"
@@ -52,16 +77,16 @@ const Layout = ({ children }) => {
                   to="/about"
                 >
                   About
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
         </nav>
       </header>
       {children}
-      {/* <footer className="py-2 text-center text-gray-600 text-xs">
-         &copy; 2021 - salles pro services
-        </footer> */}
+      <footer className="py-2 text-center text-gray-600 text-xs">
+        &copy; 2021 - {description}
+      </footer>
     </>
   )
 }
