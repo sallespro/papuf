@@ -1,6 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 
 const IndexPage = ({
@@ -21,7 +20,7 @@ const IndexPage = ({
 export default IndexPage
 
 export const query = graphql`
-  query HomePageQuery {
+  query IndexPageQuery {
     # allSitePage(filter: { path: { regex: "/services/" } }) {
       allSitePage (sort: {fields: path, order: ASC}) {
       nodes {

@@ -6,8 +6,6 @@ import usePathList from "../hooks/usePathList"
 
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata()
-
-  //console.log(usePathList())
   const pages = usePathList()
 
   return (
@@ -47,37 +45,17 @@ const Layout = ({ children }) => {
                 >
                   home
                 </Link>
+
                 {pages.map((page, index) => (
-                  <>
+                  <div key={index}>
                     <Link
                       className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
-                      key={index}
                       to={page.path}
                     >
                       {page.path.replace(/^\/|\/$/g, "")}
                     </Link>
-                    <br />
-                  </>
+                  </div>
                 ))}
-                {/* <Link
-                  className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
-                  to="/"
-                >
-                  home
-                </Link>
-                <Link
-                  className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
-                  to="/services"
-                >
-                  Services
-                </Link>
-
-                <Link
-                  className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-red-600"
-                  to="/about"
-                >
-                  About
-                </Link> */}
               </div>
             </div>
           </div>
