@@ -40,7 +40,7 @@ export default () => {
         childImageSharp {
           fluid {
             base64
-            aspectRatio
+            # aspectRatio
             src
             srcSet
             sizes
@@ -68,8 +68,8 @@ export default () => {
                   // style={{ margin: '3rem 0' }}
                 />
               ))}
-              <div className="h-8 bg-red-400 rounded w-1/2"></div>
-            <div className="h-4 bg-red-400 rounded w-5/6"></div>
+              {/* <div className="h-8 bg-red-400 rounded w-1/2"></div>
+            <div className="h-4 bg-red-400 rounded w-5/6"></div> */}
             </div>
           </div>
         </div>
