@@ -4752,6 +4752,13 @@ debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@~4.1.0:
   dependencies:
     ms "^2.1.1"
 
+debug@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
+  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
+  dependencies:
+    ms "2.1.2"
+
 decamelize@^1.1.2, decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
@@ -6615,6 +6622,19 @@ gatsby-cli@^2.18.0-next.1:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^1.1.2"
 
+gatsby-core-utils@^1.10.0:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.10.1.tgz#97bed40df3fa79800e7ce0c0491680f0aadd6ce7"
+  integrity sha512-4P3feGCJckg+DRWWl2beFk7N9c63zmCryEGPaU1OHCp+ZT2bO0ihCBuXywDWuuEp6SYP9PZ1fs0YJ/Rt6q6lag==
+  dependencies:
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    fs-extra "^8.1.0"
+    node-object-hash "^2.0.0"
+    proper-lockfile "^4.1.1"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-core-utils@^1.9.0-next.0:
   version "1.9.0-next.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.9.0-next.0.tgz#744736a002a333367f09737699eb9a4fe6b83558"
@@ -6685,10 +6705,10 @@ gatsby-plugin-manifest@next:
     semver "^7.3.2"
     sharp "^0.27.0"
 
-gatsby-plugin-mdx@next:
-  version "1.9.0-next.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.9.0-next.1.tgz#e78f6d594bd262ebdff823278b0f2b9045fe8eb0"
-  integrity sha512-34UzfRdy0lwgt1E6U6DJXd3mxATYK8fIbRF/8i0HG6NrA/+Ml63M2Wz0YjXBw2a8UkUBzF854Hk0fTJHI8LkHQ==
+gatsby-plugin-mdx@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.10.0.tgz#d814562fb4d7400038a2061048eb35c8bfe9a284"
+  integrity sha512-xoiW06TnJpdwWmqOcxcsyXf6KI1fUAWitH0zVaUpYo7use+ffoXCLsV7mU7F4x2ChcoE8eok7EhalYb582kISg==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/generator" "^7.12.5"
@@ -6701,11 +6721,11 @@ gatsby-plugin-mdx@next:
     change-case "^3.1.0"
     core-js "^3.6.5"
     dataloader "^1.4.0"
-    debug "^4.1.1"
+    debug "^4.3.1"
     escape-string-regexp "^1.0.5"
     eval "^0.1.4"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.9.0-next.0"
+    gatsby-core-utils "^1.10.0"
     gray-matter "^4.0.2"
     json5 "^2.1.3"
     loader-utils "^1.4.0"
@@ -10025,7 +10045,7 @@ ms@2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
   integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
 
-ms@^2.1.1:
+ms@2.1.2, ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
