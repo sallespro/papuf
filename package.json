@@ -17,7 +17,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.18",
     "@mdx-js/react": "^1.6.18",
-    "gatsby": "next",
+    "gatsby": "5.0.0",
     "gatsby-image": "next",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-mdx": "next",
