@@ -17,7 +17,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.18",
     "@mdx-js/react": "^1.6.18",
-    "gatsby": "next",
+    "gatsby": "3.13.0",
     "gatsby-image": "next",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-mdx": "next",
@@ -27,7 +27,7 @@
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-sharp": "next",
     "gatsby-plugin-postcss": "^2.3.0",
-    "gh-pages": "3.1.0",
+    "gh-pages": "6.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0"
